@@ -17,23 +17,36 @@ body {
   height: 100vh;
 }
 
+header {
+    height: 100%;
+}
+
 .hero-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  height: 100%;
+  /* align-items: center; */
+}
+
+.hero-image-container {
+  margin: 1rem;
+  margin-top: 15rem;
 }
 
 .hero-headings-container {
   font-family: "BlueDino", sans-serif;
+  margin-top: 16rem;
 }
 
-.hero-headings-container h1 {
+.hero-headings-h1 {
     font-size: 4rem;
     color: #647abc;
     margin: 0;
+    position: absolute;
+    top: 100px;
+    left: 450px;
 }
-
-.hero-headings-container h2 {
+.hero-headings-h2 {
     font-size: 3rem;
     color: #f8931d;
     margin: 0;
