@@ -51,3 +51,45 @@ header {
     color: #f8931d;
     margin: 0;
 }
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about-section h2 {
+    font-family: "BlueDino", sans-serif;
+    font-size: 3rem;
+    color: #647abc;
+    margin-top: 2rem;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50%;
+}
+
+.about-image-container {
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+
+.about-body {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.about-body p {
+    color: #647abc;
+    background-color: #fde5c3 ;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
