@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "BlueDino";
+  src:
+    url("../fonts/BlueDino.woff2") format("woff2"),
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../images/BackgroundWavesTransparentSmall.png) no-repeat fixed;
+  height: 100vh;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-headings-container {
+  font-family: "BlueDino", sans-serif;
+}
+
+.hero-headings-container h1 {
+    font-size: 4rem;
+    color: #647abc;
+    margin: 0;
+}
+
+.hero-headings-container h2 {
+    font-size: 3rem;
+    color: #f8931d;
+    margin: 0;
+}
