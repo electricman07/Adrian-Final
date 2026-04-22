@@ -209,4 +209,5 @@ header {
 .production-design-right img {
     padding: 1rem;
     margin: 3rem;
+    width: 100%;
 }
