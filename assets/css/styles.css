@@ -50,7 +50,10 @@ header {
     font-size: 3rem;
     color: #f8931d;
     margin: 0;
+    font-weight: 200;
 }
+
+/* About Section */
 
 .about-section {
     display: flex;
@@ -60,11 +63,12 @@ header {
     height: 100vh;
 }
 
-.about-section h2 {
+.about-section h2, .toc-section h2 {
     font-family: "BlueDino", sans-serif;
-    font-size: 3rem;
-    color: #647abc;
+    font-size: 4rem;
+    color: #f8931d;
     margin-top: 2rem;
+    font-weight: 200;
 }
 
 .about-container {
@@ -93,3 +97,28 @@ header {
     font-size: 1.5rem;
     border-radius: 1rem;
 }
+
+/* Table of Contents Section */
+.toc-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.toc-section h2 {
+    text-align: right;
+    position: relative;
+}
+
+.toc-section ul {
+    color: #647abc;
+    line-height: 2;
+}
+
+.toc-section ul a {
+    color: #647abc;
+    text-decoration: none;
+    font-size: 1.7rem;
+    padding: 0.5rem;}
