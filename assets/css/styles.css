@@ -63,7 +63,7 @@ header {
     height: 100vh;
 }
 
-.about-section h2, .toc-section h2 {
+.section-heading {
     font-family: "BlueDino", sans-serif;
     font-size: 4rem;
     color: #f8931d;
@@ -121,4 +121,45 @@ header {
     color: #647abc;
     text-decoration: none;
     font-size: 1.7rem;
-    padding: 0.5rem;}
+    padding: 0.5rem;
+}
+
+    /* Bloody Knight Section */
+.bloody-section {
+        height: 100vh;
+}
+
+.bloody-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+
+.bloody-image-container {
+    width: 50%;
+    margin-top: 5rem;
+}
+
+.bloody-image-container img:last-child {
+    margin-left: 5rem;
+}
+
+.bloody-content-body h2 {
+    text-align: center;
+}
+
+.bloody-content-body h3 {
+    font-size: 3rem;
+    color:#647abc;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.bloody-content-body p {
+    color: #647abc;
+    padding: 1rem;
+    font-size: 1.7rem;
+    margin: 0;
+    text-align: center;
+}
