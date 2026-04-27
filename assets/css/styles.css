@@ -14,7 +14,7 @@ html {
 
 body {
   background: url(../images/BackgroundWavesTransparentSmall.png) no-repeat fixed;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 header {
@@ -23,31 +23,39 @@ header {
 
 .hero-container {
   display: flex;
-  justify-content: center;
-  height: 100%;
-  /* align-items: center; */
+  flex-direction: column-reverse;
+  margin-bottom: 8rem;
+  /* height: 100vh; */
+
 }
 
 .hero-image-container {
   margin: 1rem;
-  margin-top: 15rem;
+  margin-top: 5rem;
+}
+
+.hero-image-container img {
+  width: 100%;
 }
 
 .hero-headings-container {
   font-family: "BlueDino", sans-serif;
-  margin-top: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
 }
 
 .hero-headings-h1 {
-    font-size: 4rem;
+    font-size: 1.5rem;
     color: #647abc;
     margin: 0;
-    position: absolute;
-    top: 100px;
-    left: 450px;
+    height: 110px;
+   
+
 }
 .hero-headings-h2 {
-    font-size: 3rem;
+    font-size: 1rem;
     color: #f8931d;
     margin: 0;
     font-weight: 200;
@@ -60,7 +68,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    
+
 }
 
 .section-heading {
@@ -73,7 +82,9 @@ header {
 
 .about-container {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
     height: 50%;
 }
 
@@ -84,10 +95,10 @@ header {
 
 
 .about-body {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: center;
 }
 
 .about-body p {
@@ -106,10 +117,8 @@ header {
     justify-content: center;
     height: 100vh;
 }
-
-.toc-section h2 {
-    text-align: right;
-    position: relative;
+.toc-heading-container {
+    text-align: center;
 }
 
 .toc-section ul {
@@ -126,22 +135,27 @@ header {
 
     /* Bloody Knight Section */
 .bloody-section {
-        height: 100vh;
+        /* height: 100vh; */
 }
 
 .bloody-container {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-evenly;
+    align-items: center;
     margin-top: 5rem;
 }
 
 .bloody-image-container {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
     margin-top: 5rem;
 }
 
 .bloody-image-container img:last-child {
-    margin-left: 5rem;
+    width: 90%;
 }
 
 .bloody-content-body h2 {
@@ -161,20 +175,110 @@ header {
     padding: 1rem;
     font-size: 1.7rem;
     margin: 0;
-    text-align: center;
+    text-align: center ;
+}
+
+.bloody-content-body .bloody-content-paragraph{
+    text-align: justify;
 }
 
 /* Production Designer Section */
+
+.production-design-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.production-design-left img {
+    width: 100%;
+
+}
+
+.production-design-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.production-design-right h2 {
+    text-align: center;
+}
+
+.production-design-right p {
+    color: #647abc;
+    padding: 1rem;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.production-design-right img {
+    padding-bottom: .5rem;
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    
+    .hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 15rem
+
+}
+.hero-image-container img {
+  width: 300px;
+}
+.hero-headings-container {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.hero-headings-h1 {
+font-size: 2.5rem;
+}
+.hero-headings-h2 {
+font-size: 1.5rem;
+}
+
+.about-container {
+flex-direction:row;
+}
+.about-body {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bloody-section {
+        height: 100vh;
+}
+.bloody-container {
+    flex-direction: row;
+    
+}
+.bloody-image-container img:last-child {
+    margin-left: 5rem;
+}
+.bloody-image-container {
+    flex-direction: column;
+    width: 50%;
+}
+
 .production-design-section {
     height: 100vh;
 }
 
 .production-design-container {
-    display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
     margin-right: 5rem;
     margin-top: 5rem;
-
+    gap: 1rem;
 }
 
 .production-design-left {
@@ -190,24 +294,25 @@ header {
 
 .production-design-right {
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
 }
-
-.production-design-right h2 {
-    text-align: right;
-}
-
-.production-design-right p {
-    color: #647abc;
-    padding: 1rem;
-    font-size: 1.7rem;
-    text-align: center;
-}
-
 .production-design-right img {
-    padding: 1rem;
+    width: 90%;
     margin: 3rem;
-    width: 100%;
+}
+}
+
+@media screen and (min-width: 1000px) {
+    .hero-headings-h1 {
+    font-size: 2.5rem;
+}
+    .hero-headings-h2 {
+    font-size: 1.5rem;
+    }
+    .bloody-image-container {
+    align-items: flex-start;
+}
+    .bloody-image-container img:last-child {
+    width: auto;
+}
 }
