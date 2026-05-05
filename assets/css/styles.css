@@ -296,10 +296,6 @@ flex-direction:row;
     width: 50%;
 }
 
-.production-design-section {
-    height: 100vh;
-}
-
 .production-design-container {
     flex-direction: row;
     margin-right: 5rem;
@@ -326,10 +322,25 @@ flex-direction:row;
     width: 90%;
     margin: 3rem;
 }
+.image1 {
+    grid-area: image1;
+}
+.image2 {
+    grid-area: image2;
+}
+
+.production-design-section2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 200px;
+    grid-template-areas: 
+    "image1 image1 image1 ."
+    ". . image2 image2";
+    gap: 1rem;
+}
 .production-design-page img {
-    width: 80%;
-    margin-left: 5rem;
-    margin-top: 5rem;
+    width: 100%;
+    justify-self: start;
 }
 }
 
