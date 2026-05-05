@@ -228,8 +228,9 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 100vh;
-  margin-top: 15rem
+  /* height: 100vh; */
+  margin-top: 15rem;
+  margin-bottom: 15rem;
 
 }
 .hero-image-container img {
